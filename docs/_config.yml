@@ -1,0 +1,8 @@
+# GitHub Pages config — serves the /docs folder
+# No Jekyll processing needed for pure HTML/CSS/JS
+exclude:
+  - "*.tex"
+  - "*.aux"
+  - "*.log"
+  - "*.pdf"
+  - "*.md"
