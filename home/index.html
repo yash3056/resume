@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Prakash Narayan — Hub</title>
+  <meta name="description" content="Personal hub of Yash Prakash Narayan — AI & ML Engineer. Explore my portfolio, research, and projects." />
+  <meta property="og:title" content="Yash Prakash Narayan" />
+  <meta property="og:description" content="AI & ML Engineer · Published Researcher · Builder" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yash3056.in" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yash3056.in/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <!-- ========== CANVAS BACKGROUND ========== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>YPN<span class="logo-bracket">/&gt;</span>
+      </a>
+      <div class="nav-right">
+        <a href="https://github.com/yash3056" target="_blank" class="nav-icon-link" id="nav-github" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yash3056" target="_blank" class="nav-icon-link" id="nav-linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:yashnarayanp8@gmail.com" class="nav-icon-link" id="nav-email" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-greeting" id="hero-greeting">
+        <span class="greeting-dot"></span>
+        <span id="greeting-text">Hello, world!</span>
+      </div>
+      <h1 class="hero-name" id="hero-name">
+        Yash Prakash<br />
+        <span class="name-highlight">Narayan</span>
+      </h1>
+      <p class="hero-tagline" id="hero-tagline">
+        <span class="typed-text" id="typed-output"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-bio">
+        AI &amp; ML Engineer building intelligent systems that solve real-world problems.
+        Published researcher. Open to opportunities.
+      </p>
+      <div class="hero-cta">
+        <a href="https://about.yash3056.in" id="cta-about" class="btn-primary">
+          <i class="fas fa-user-circle"></i>
+          View Full Portfolio
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="mailto:yashnarayanp8@gmail.com" id="cta-contact" class="btn-ghost">
+          <i class="fas fa-paper-plane"></i>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== QUICK STATS ========== -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-pill" id="stat-papers">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-lbl">Publications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill" id="stat-citations">
+          <span class="stat-num" data-target="13">0</span>
+          <span class="stat-lbl">Citations</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill" id="stat-projects">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-lbl">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill" id="stat-accuracy">
+          <span class="stat-num" data-target="97" data-suffix="%+">0</span>
+          <span class="stat-lbl">Model Accuracy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HUB / MENU ========== -->
+  <section id="hub">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">Navigation Hub</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="hub-title">Where would you like to go?</h2>
+      <p class="hub-subtitle">Everything I do, in one place.</p>
+
+      <div class="hub-grid">
+
+        <!-- About Me — live -->
+        <a href="https://about.yash3056.in" id="hub-about" class="hub-card hub-card-live">
+          <div class="hub-card-glow"></div>
+          <div class="hub-card-inner">
+            <div class="hub-icon hub-icon-blue">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="hub-card-meta">
+              <span class="hub-status hub-status-live">
+                <span class="live-dot"></span> Live
+              </span>
+            </div>
+            <h3 class="hub-card-title">About Me</h3>
+            <p class="hub-card-desc">
+              My full portfolio — research, projects, skills, publications, and everything about Yash Prakash Narayan.
+            </p>
+            <div class="hub-card-url">about.yash3056.in</div>
+            <div class="hub-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!--
+        ============================================================
+        FUTURE PROJECTS — Add new hub cards here when ready.
+        Template for a new project card:
+
+        <a href="https://PROJECT-SUBDOMAIN.yash3056.in" id="hub-PROJECT-ID" class="hub-card">
+          <div class="hub-card-glow"></div>
+          <div class="hub-card-inner">
+            <div class="hub-icon hub-icon-COLOR">
+              <i class="fas fa-ICON-NAME"></i>
+            </div>
+            <div class="hub-card-meta">
+              <span class="hub-status hub-status-live">
+                <span class="live-dot"></span> Live
+              </span>
+            </div>
+            <h3 class="hub-card-title">Project Name</h3>
+            <p class="hub-card-desc">Short description of the project.</p>
+            <div class="hub-card-url">subdomain.yash3056.in</div>
+            <div class="hub-card-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        Available hub-icon colors: hub-icon-blue, hub-icon-purple,
+        hub-icon-green, hub-icon-orange, hub-icon-pink, hub-icon-cyan
+        ============================================================
+        -->
+
+        <!-- Coming Soon Placeholder 1 -->
+        <div class="hub-card hub-card-soon" id="hub-soon-1">
+          <div class="hub-card-inner">
+            <div class="hub-icon hub-icon-purple">
+              <i class="fas fa-flask"></i>
+            </div>
+            <div class="hub-card-meta">
+              <span class="hub-status hub-status-soon">Coming Soon</span>
+            </div>
+            <h3 class="hub-card-title">Research Lab</h3>
+            <p class="hub-card-desc">
+              An interactive showcase of my AI research, experiments, and findings with live demos.
+            </p>
+            <div class="hub-card-url">research.yash3056.in</div>
+          </div>
+        </div>
+
+        <!-- Coming Soon Placeholder 2 -->
+        <div class="hub-card hub-card-soon" id="hub-soon-2">
+          <div class="hub-card-inner">
+            <div class="hub-icon hub-icon-green">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <div class="hub-card-meta">
+              <span class="hub-status hub-status-soon">Coming Soon</span>
+            </div>
+            <h3 class="hub-card-title">Projects</h3>
+            <p class="hub-card-desc">
+              In-depth write-ups and demos for my personal and academic AI/ML engineering projects.
+            </p>
+            <div class="hub-card-url">projects.yash3056.in</div>
+          </div>
+        </div>
+
+        <!-- Coming Soon Placeholder 3 -->
+        <div class="hub-card hub-card-soon" id="hub-soon-3">
+          <div class="hub-card-inner">
+            <div class="hub-icon hub-icon-orange">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="hub-card-meta">
+              <span class="hub-status hub-status-soon">Coming Soon</span>
+            </div>
+            <h3 class="hub-card-title">Blog</h3>
+            <p class="hub-card-desc">
+              Thoughts on AI, ML engineering, research papers, and lessons learned from building things.
+            </p>
+            <div class="hub-card-url">blog.yash3056.in</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED WORK ========== -->
+  <section id="featured">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">Featured Work</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-h2">Highlights</h2>
+
+      <div class="featured-list">
+
+        <div class="featured-item" id="feat-depression">
+          <div class="feat-left">
+            <div class="feat-icon feat-icon-purple">
+              <i class="fas fa-brain"></i>
+            </div>
+          </div>
+          <div class="feat-body">
+            <span class="feat-tag feat-tag-research">Research · 2026</span>
+            <h3>Depression Detection Using ModernBERT &amp; CNN Ensemble</h3>
+            <p>State-of-the-art depression detection on Reddit posts. Published at IEEE ICSCS 2026.</p>
+            <div class="feat-links">
+              <a href="https://ieeexplore.ieee.org/abstract/document/11526501/" target="_blank" class="feat-link" id="feat-link-ieee">
+                <i class="fas fa-external-link-alt"></i> IEEE Xplore
+              </a>
+              <a href="https://scholar.google.com/citations?user=UMBJm-MAAAAJ&hl=en" target="_blank" class="feat-link" id="feat-link-scholar">
+                <i class="fas fa-graduation-cap"></i> Scholar
+              </a>
+            </div>
+          </div>
+          <div class="feat-badge">Published</div>
+        </div>
+
+        <div class="featured-item" id="feat-skin">
+          <div class="feat-left">
+            <div class="feat-icon feat-icon-pink">
+              <i class="fas fa-microscope"></i>
+            </div>
+          </div>
+          <div class="feat-body">
+            <span class="feat-tag feat-tag-research">Research · 2025</span>
+            <h3>Robust Skin Cancer Detection via CNN-Transformer-GRU Fusion</h3>
+            <p>GAN-augmented multi-architecture fusion for medical image classification. Published in CMES.</p>
+            <div class="feat-links">
+              <a href="https://scholar.google.com/citations?user=UMBJm-MAAAAJ&hl=en" target="_blank" class="feat-link" id="feat-link-skin-scholar">
+                <i class="fas fa-graduation-cap"></i> Scholar
+              </a>
+            </div>
+          </div>
+          <div class="feat-badge">Published</div>
+        </div>
+
+        <div class="featured-item" id="feat-phishing">
+          <div class="feat-left">
+            <div class="feat-icon feat-icon-blue">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="feat-body">
+            <span class="feat-tag feat-tag-project">Project · 2025–2026</span>
+            <h3>Phishing URL Detector — 97%+ Accuracy with INT8 Quantization</h3>
+            <p>Transformer models (15M–100M params), 4× size reduction via ONNX INT8 quantization with &lt;0.5% accuracy drop.</p>
+            <div class="feat-links">
+              <a href="https://github.com/yash3056" target="_blank" class="feat-link" id="feat-link-phishing-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="feat-badge feat-badge-project">Project</div>
+        </div>
+
+      </div>
+
+      <div class="see-more">
+        <a href="https://about.yash3056.in" id="see-more-link" class="see-more-btn">
+          See everything on my portfolio <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONNECT ========== -->
+  <section id="connect">
+    <div class="container">
+      <div class="connect-card">
+        <div class="connect-glow"></div>
+        <div class="connect-inner">
+          <h2>Let's Build Something Together</h2>
+          <p>I'm always open to interesting projects, research collaborations, and opportunities.</p>
+          <div class="connect-links">
+            <a href="mailto:yashnarayanp8@gmail.com" id="connect-email" class="connect-btn connect-btn-primary">
+              <i class="fas fa-envelope"></i> yashnarayanp8@gmail.com
+            </a>
+            <div class="connect-socials">
+              <a href="https://github.com/yash3056" target="_blank" id="connect-github" class="social-btn" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/yash3056" target="_blank" id="connect-linkedin" class="social-btn" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://scholar.google.com/citations?user=UMBJm-MAAAAJ&hl=en" target="_blank" id="connect-scholar" class="social-btn" aria-label="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">&lt;YPN/&gt;</span>
+        <span class="footer-copy">© 2026 Yash Prakash Narayan · New Delhi, India</span>
+        <div class="footer-nav">
+          <a href="https://about.yash3056.in" id="footer-about">About</a>
+          <a href="mailto:yashnarayanp8@gmail.com" id="footer-email">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
