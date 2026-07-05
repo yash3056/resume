@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Yash Prakash Narayan</title>
+  <meta name="description"
+    content="Research publications by Yash Prakash Narayan — AI & ML Engineer specializing in NLP, Computer Vision, and LLM fine-tuning." />
+  <meta property="og:title" content="Research · Yash Prakash Narayan" />
+  <meta property="og:description"
+    content="Published AI researcher — NLP · Computer Vision · Depression Detection · Skin Cancer Detection" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://research.yash3056.in" />
+  <link rel="canonical" href="https://research.yash3056.in/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="https://yash3056.in" class="nav-home-link" id="nav-home" aria-label="Back to home">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="/" class="nav-logo" id="nav-logo">
+          <span class="logo-bracket">&lt;</span>Research<span class="logo-bracket">/&gt;</span>
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="https://scholar.google.com/citations?user=UMBJm-MAAAAJ&hl=en" target="_blank" class="nav-scholar"
+          id="nav-scholar">
+          <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Yash Prakash Narayan · Publications
+      </div>
+      <h1 class="hero-title">
+        Peer-Reviewed<br />
+        <span class="title-gradient">Research</span>
+      </h1>
+      <p class="hero-desc">
+        Published work in <strong>Natural Language Processing</strong> and
+        <strong>Computer Vision</strong> — building AI that detects, diagnoses, and defends at scale.
+      </p>
+      <div class="hero-stats">
+        <div class="hstat" id="hstat-papers">
+          <span class="hstat-num" data-target="2">0</span>
+          <span class="hstat-lbl">Publications</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat" id="hstat-cites">
+          <span class="hstat-num" data-target="13">0</span>
+          <span class="hstat-lbl">Citations</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat" id="hstat-venues">
+          <span class="hstat-num" data-target="2">0</span>
+          <span class="hstat-lbl">Venues</span>
+        </div>
+      </div>
+      <a href="https://scholar.google.com/citations?user=UMBJm-MAAAAJ&hl=en" target="_blank" id="hero-scholar-btn"
+        class="btn-primary">
+        <i class="fas fa-graduation-cap"></i> View on Google Scholar
+      </a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <div class="sec-label">
+        <span class="label-line"></span>
+        <span class="label-text">Publications</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="sec-title">Published Papers</h2>
+
+      <!-- Paper 1 -->
+      <article class="paper-card reveal" id="paper-depression">
+        <div class="paper-year-col">
+          <span class="paper-year">2026</span>
+          <div class="paper-year-line"></div>
+        </div>
+        <div class="paper-body">
+          <div class="paper-top">
+            <div class="paper-badges">
+              <span class="badge badge-ieee">IEEE</span>
+              <span class="badge badge-nlp">NLP</span>
+              <span class="badge badge-new">Latest</span>
+            </div>
+            <div class="paper-venue-chip">
+              <i class="fas fa-microchip"></i> ICSCS 2026
+            </div>
+          </div>
+          <h3 class="paper-title">
+            Depression Detection Using ModernBERT and CNN Ensemble Model in Text Data
+          </h3>
+
+          <!-- Abstract toggle -->
+          <div class="abstract-wrap">
+            <button class="abstract-toggle" id="abs-btn-1" aria-expanded="false">
+              <i class="fas fa-chevron-right"></i> Abstract
+            </button>
+            <div class="abstract-body" id="abs-body-1">
+              Depression and suicidal distress are often reflected in how people write online, which makes social media
+              text a useful source for early risk screening at scale. At the same time, manual assessment and
+              traditional clinical workflows are difficult to apply to large volumes of user-generated content. In this
+              paper, we present a parallel ensemble model that combines ModernBERT and a Convolutional Neural Network
+              (CNN) for binary classification of mental-health-related posts. ModernBERT is used to capture long-range
+              contextual meaning in text, while the CNN branch focuses on shorter local patterns such as key phrases and
+              syntactic cues. Instead of relying on separate classifier heads, we extract feature vectors from both
+              branches, concatenate them, apply dropout (p=0.3) to improve robustness, and use a final fully connected
+              layer to produce the class logits. We evaluate the approach on the Kaggle Reddit SuicideWatch dataset
+              (232,074 posts; balanced labels). The model converges quickly and generalizes well: after three epochs it
+              achieves 99.74 % training accuracy (loss 0.0077) and 99.39 % validation accuracy (loss 0.0231). Overall,
+              the proposed ensemble reaches 99.33 % accuracy, demonstrating that combining long-context transformer
+              representations with CNN-based local feature extraction can improve reliability for text-based mental
+              health screening.
+            </div>
+          </div>
+
+          <p class="paper-authors">
+            V. Jain, A.K. Dubey, A. Jain, <strong>Y.P. Narayan</strong>
+          </p>
+          <p class="paper-venue-full">
+            13th International Conference on Computing for Sustainable Global Development (INDIACom), IEEE
+          </p>
+
+          <div class="paper-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11526501/" target="_blank"
+              class="paper-link paper-link-ieee" id="paper1-ieee">
+              <i class="fas fa-external-link-alt"></i> IEEE Xplore
+            </a>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UMBJm-MAAAAJ&citation_for_view=UMBJm-MAAAAJ:u5HHmVD_uO8C"
+              target="_blank" class="paper-link paper-link-scholar" id="paper1-scholar">
+              <i class="fas fa-graduation-cap"></i> Google Scholar
+            </a>
+            <button class="paper-link paper-link-cite" id="paper1-cite-btn" onclick="copyCite('paper1')">
+              <i class="fas fa-quote-right"></i> Cite
+            </button>
+          </div>
+          <div class="cite-box" id="cite-paper1">
+            <pre>@inproceedings{jain2026depression,
+  title     = {Depression Detection Using ModernBERT and CNN Ensemble Model in Text Data},
+  author    = {Jain, V. and Dubey, A.K. and Jain, A. and Narayan, Y.P.},
+  booktitle = {13th International Conference on Computing for Sustainable Global Development (INDIACom)},
+  publisher = {IEEE},
+  year      = {2026}
+}</pre>
+            <span class="cite-copied" id="cite-paper1-msg">Copied!</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paper 2 -->
+      <article class="paper-card reveal" id="paper-skin">
+        <div class="paper-year-col">
+          <span class="paper-year">2025</span>
+          <div class="paper-year-line"></div>
+        </div>
+        <div class="paper-body">
+          <div class="paper-top">
+            <div class="paper-badges">
+              <span class="badge badge-journal">Journal</span>
+              <span class="badge badge-cv">Computer Vision</span>
+            </div>
+            <div class="paper-venue-chip">
+              <i class="fas fa-book-open"></i> CMES
+            </div>
+          </div>
+          <h3 class="paper-title">
+            Robust Skin Cancer Detection via CNN-Transformer-GRU Fusion and GAN Data Augmentation
+          </h3>
+
+          <!-- Abstract toggle -->
+          <div class="abstract-wrap">
+            <button class="abstract-toggle" id="abs-btn-2" aria-expanded="false">
+              <i class="fas fa-chevron-right"></i> Abstract
+            </button>
+            <div class="abstract-body" id="abs-body-2">
+              Skin cancer remains a significant global health challenge, and early detection is crucial to improving
+              patient outcomes. This study presents a novel deep learning framework that combines Convolutional Neural
+              Networks (CNNs), Transformers, and Gated Recurrent Units (GRUs) for robust skin cancer classification. To
+              address data set imbalance, we employ StyleGAN3-based synthetic data augmentation alongside traditional
+              techniques. The hybrid architecture effectively captures both local and global dependencies in dermoscopic
+              images, while the GRU component models sequential patterns. Evaluated on the HAM10000 dataset, the
+              proposed model achieves an accuracy of 90.61%, outperforming baseline architectures such as VGG16 and
+              ResNet. Our system also demonstrates superior precision (91.11%), recall (95.28%), and AUC (0.97),
+              highlighting its potential as a reliable diagnostic tool for the detection of melanoma. This work advances
+              automated skin cancer diagnosis by addressing critical challenges related to class imbalance and limited
+              generalization in medical imaging.
+            </div>
+          </div>
+
+          <p class="paper-authors">
+            A. Varghese, A. Jain, M.I. Rahman, M. Khan, A.K. Dubey, I. Ahmed, <strong>Y.P. Narayan</strong> et al.
+          </p>
+          <p class="paper-venue-full">
+            Computer Modeling in Engineering &amp; Sciences (CMES), Tech Science Press
+          </p>
+
+          <div class="paper-links">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=UMBJm-MAAAAJ&citation_for_view=UMBJm-MAAAAJ:u-x6o8ySG0sC"
+              target="_blank" class="paper-link paper-link-scholar" id="paper2-scholar">
+              <i class="fas fa-graduation-cap"></i> Google Scholar
+            </a>
+            <button class="paper-link paper-link-cite" id="paper2-cite-btn" onclick="copyCite('paper2')">
+              <i class="fas fa-quote-right"></i> Cite
+            </button>
+          </div>
+          <div class="cite-box" id="cite-paper2">
+            <pre>@article{varghese2025skin,
+  title   = {Robust Skin Cancer Detection via CNN-Transformer-GRU Fusion and GAN Data Augmentation},
+  author  = {Varghese, A. and Jain, A. and Rahman, M.I. and Khan, M. and Dubey, A.K. and Ahmed, I. and Narayan, Y.P. and others},
+  journal = {Computer Modeling in Engineering & Sciences (CMES)},
+  year    = {2025}
+}</pre>
+            <span class="cite-copied" id="cite-paper2-msg">Copied!</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect">
+    <div class="container">
+      <div class="connect-card reveal">
+        <div class="connect-glow"></div>
+        <div class="connect-inner">
+          <h2>Interested in Collaborating?</h2>
+          <p>I'm open to research collaborations, paper reviews, and academic discussions.</p>
+          <div class="connect-row">
+            <a href="mailto:yashnarayanp8@gmail.com" id="connect-email" class="btn-primary">
+              <i class="fas fa-envelope"></i> yashnarayanp8@gmail.com
+            </a>
+            <div class="connect-socials">
+              <a href="https://scholar.google.com/citations?user=UMBJm-MAAAAJ&hl=en" target="_blank"
+                id="connect-scholar" class="social-btn" aria-label="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+              <a href="https://github.com/yash3056" target="_blank" id="connect-github" class="social-btn"
+                aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/yash3056" target="_blank" id="connect-linkedin" class="social-btn"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">&lt;Research/&gt;</span>
+          <span class="footer-sub">Yash Prakash Narayan</span>
+        </div>
+        <div class="footer-nav">
+          <a href="https://yash3056.in" id="footer-home">Home</a>
+          <a href="https://about.yash3056.in" id="footer-about">About</a>
+          <a href="mailto:yashnarayanp8@gmail.com" id="footer-email">Contact</a>
+        </div>
+        <p class="footer-copy">© 2026 · New Delhi, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+
+</html>

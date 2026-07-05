@@ -1,0 +1,9 @@
+# wrangler.toml — Cloudflare Workers config for research.yash3056.in
+# Deploy command: npx wrangler deploy
+# Set Cloudflare root path to /research/ so "." resolves correctly.
+
+name = "research-yash3056"
+compatibility_date = "2024-09-23"
+
+[assets]
+directory = "."
