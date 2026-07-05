@@ -1,10 +1,11 @@
 # wrangler.toml — Cloudflare Workers config for yash3056.in
 # Deploy with: npx wrangler deploy
+# NOTE: Cloudflare root is set to /home/, so assets dir is "." (this directory itself)
 
 name = "resume"
 compatibility_date = "2024-09-23"
 
-# Serve the home/ directory as static assets.
-# All files in home/ (index.html, assets/, etc.) are served automatically.
+# "." means serve everything in the current directory (home/).
+# Cloudflare Workers root path is already /home/, so this resolves correctly.
 [assets]
-directory = "./home"
+directory = "."
