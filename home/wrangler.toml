@@ -1,0 +1,10 @@
+# wrangler.toml — Cloudflare Workers config for yash3056.in
+# Deploy with: npx wrangler deploy
+
+name = "resume"
+compatibility_date = "2024-09-23"
+
+# Serve the home/ directory as static assets.
+# All files in home/ (index.html, assets/, etc.) are served automatically.
+[assets]
+directory = "./home"

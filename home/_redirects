@@ -1,7 +1,0 @@
-# Cloudflare Pages _redirects
-# Place this file in the root of your deployed directory (home/)
-# Cloudflare Pages reads this automatically.
-
-# No redirects needed currently — all routing handled by subdomains.
-# Add future redirects below as needed, e.g.:
-# /old-path  /new-path  301
